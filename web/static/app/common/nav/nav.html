@@ -1,0 +1,19 @@
+<div class="main-nav">
+    <div class="logo">
+    </div>
+    <div class="user">
+        <i class="fa fa-user"></i>
+    </div>
+
+    <ul class="navs">
+        <li ng-repeat="item in vm.navs"  tooltip-placement="right" uib-tooltip="{{item.name}}" ng-class="{true:'active',false:''}[item.active]">
+            <a href="javascript:;"><i ng-class="item.className"></i></a>
+        </li>
+    </ul>
+
+    <!--<a ng-href="user">usersdfdsfsdf</a>-->
+    <!--<a ng-href="hotsport">user</a>-->
+    <div class="bottom-area">
+        <i class="fa fa-sign-out" ng-click="vm.logout()"></i>
+    </div>
+</div>

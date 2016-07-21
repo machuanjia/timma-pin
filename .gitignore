@@ -1,0 +1,9 @@
+node_modules
+.idea
+
+*.css
+!/web/static/dist/*.css
+!/web/static/dist/*.js
+
+/web/static/dist/
+/web/static/bower_components

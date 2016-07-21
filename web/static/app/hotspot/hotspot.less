@@ -1,0 +1,46 @@
+.article{
+  margin-top: 20px;
+  border-bottom: 1px lighten(@color-gray,10%) solid;
+  &:last-child{
+	border-bottom: none;
+  }
+  .flex-row();
+  .avatar{
+	width: 55px;
+	a{
+	  display: inline-block;
+	  width: 40px;
+	  height: 40px;
+	  border-radius: 20px;
+	  font-size: 25px;
+	  border: 1px  @color-gray solid;
+	  text-align: center;
+	}
+  }
+  .content{
+	.flex-se1();
+	.title{
+	  color: darken(@color-gray,30%);;
+	  font-size: 18px;
+	}
+	.abstract{
+	  color: @color-gray;
+	  font-size: 14px;
+	  margin-top:15px;
+	}
+	.desc{
+	  margin-top: 10px;
+	  margin-bottom: 20px;
+	  span{
+		color: @color-gray;
+		margin-left: 10px;
+		margin-right: 10px;
+	  }
+	}
+  }
+  .action{
+	width: 100px;
+	text-align: right;
+	padding-top: 43px;
+  }
+}

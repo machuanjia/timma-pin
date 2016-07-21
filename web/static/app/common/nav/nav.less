@@ -1,0 +1,62 @@
+.main-nav {
+  position: relative;
+  background : @nav-bg;
+  .logo{
+    background: url("@{imgurl}logo/logo.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-top: 10px;
+    background-size: contain;
+  }
+
+  .user{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 20px;
+    color: @color-border-white;
+    border:1px @color-border-white solid;
+    border-radius: 20px;
+    text-align: center;
+    opacity: 0.5;
+    cursor: pointer;
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  .navs{
+    li{
+      list-style: none;
+      font-size: 20px;
+      text-align: center;
+      margin: 10px;
+      opacity: 0.5;
+      margin-top: 15px;
+      &:hover,&:active,&.active{
+        opacity: 1;
+      }
+      a{
+        color: @color-text-white;
+      }
+    }
+  }
+
+  .bottom-area{
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: @color-text-white;
+    text-align: center;
+    opacity: 0.5;
+    cursor: pointer;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}

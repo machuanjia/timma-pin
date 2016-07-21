@@ -1,0 +1,37 @@
+.h100{
+  height: 100%;
+}
+.main-layout{
+  .flex-row();
+  position: relative;
+  height: 100%;
+  .main-nav{
+	width: 50px;
+  }
+  .main-aside{
+	width: 250px;
+  }
+  .main-body{
+	flex : 1;
+    .flex-col();
+    .main-toolbar{
+      margin: 0 20px;
+      padding: 10px 0;
+      border-bottom: 1px @color-border-gray solid;
+    }
+    .main-content{
+      .flex-se1();
+      margin: 0 20px;
+    }
+  }
+  .main-slider{
+	position: absolute;
+	width: 40px;
+	height:100%;
+	background: #000088;
+	right: 0;
+	top : 0;
+	display:none;
+	transform: all 0.3s;
+  }
+}

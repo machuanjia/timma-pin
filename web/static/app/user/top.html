@@ -1,0 +1,13 @@
+<div class="user-wrap">
+    <div class="input-group">
+        <input type="text" class="form-control" ng-model="vm.name" placeholder="Recipient's username">
+        <span class="input-group-addon" ng-click="vm.addUser()">add</span>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="item in vm.users track by item._id">
+            {{item.name}}
+            <a href="javascripe:;" ng-click="vm.removeUser(item._id)">del</a>
+        </li>
+    </ul>
+</div>
+
