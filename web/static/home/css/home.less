@@ -1,13 +1,99 @@
-@import (less) "../../bower_components/bootstrap/dist/css/bootstrap.css";
+@import "../../bower_components/bootstrap/less/bootstrap.less";
 @import "../../bower_components/font-awesome/less/font-awesome.less";
 @import "../../common/variables";
 @import "../../bower_components/bootstrap/less/theme.less";
-.login-pannel{
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  border: 1px @brand-primary solid;
-  padding: 10px;
-  box-shadow: 2px 2px 2px @brand-primary;
+
+html,body{
+  height: 100%;
 }
+.login-wrap{
+  background: url("/image/home/login-bg.jpg") no-repeat;
+  background-size: 100% auto;
+  min-height: 100%;
+  .login-content{
+    background: rgba(0,0,0,0.6);
+    min-height: 100%;
+    padding-top: 100px;
+    .login-pannel{
+      border-radius:5px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px @brand-primary solid;
+      padding: 10px;
+      box-shadow: 2px 2px 2px @brand-primary;
+      background: url("/image/home/login-pannel-bg.jpg") no-repeat;
+      background-size:100% 100%;
+      position: relative;
+      box-shadow:0 0 8px rgba(0,0,0,0.3);
+
+
+      .login-logo-wrap{
+        position: absolute;
+        width: 100%;
+        top:-30px;
+        text-align: center;
+        .login-logo{
+          width: 60px;
+          height: 60px;
+          border: 2px #fff solid;
+          border-radius: 60px;
+          background: #fff;
+          box-shadow:0 0 8px rgba(0,0,0,0.3);
+        }
+      }
+
+      .login-btn{
+        position: absolute;
+        right: 10px;
+        top:10px;
+      }
+
+      .login-slogen{
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.58);
+        font-weight: bold;
+        .title{
+          font-size: 27px;
+        }
+        .desc{
+          font-size: 18px;
+        }
+      }
+
+      hr{
+        max-width: 250px;
+      }
+
+      .login-form{
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .registe-form{
+        //display: none;
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .login-footer{
+        margin-bottom: 30px;
+        color: #fff;
+        a{
+          color: #fff;
+        }
+        text-shadow: 0 2px 6px rgba(0,0,0,0.58);
+      }
+
+    }
+  }
+}
+.help-block{
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.58);
+}
+

@@ -12,5 +12,10 @@
     app.post("/login",api.user.login);
     app.get("/logout",api.user.logout);
     app.post("/register",api.user.register);
+
+
+    //app.use(function (error, req, res, next) {
+    //    return res.render('common/error.html', {locale: locale});
+    //});
   };
 })();
